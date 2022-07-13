@@ -1,10 +1,11 @@
 import "./App.css";
-
 import Menu from '.././layout/Menu';
 import Content from '.././layout/Content';
 import Footer from '../layout/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => (
+  <Router>
     <div className='App container-fluid h-100'>
       <div className='row'>
         <div className='col-3'>
@@ -24,6 +25,7 @@ const App = () => (
         </div>
       </div>
     </div>
+  </Router>
 );
 
 export default App;

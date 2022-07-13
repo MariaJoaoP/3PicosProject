@@ -1,0 +1,15 @@
+#logo {
+    width: 80px;
+    border: 3px solid rgb(212, 108, 17);
+}
+
+.list-group {
+    --bs-list-group-color: rgb(119,119,119);
+    --bs-list-group-bg: #{$list-group-bg};
+    --bs-list-group-item-padding-x: 10px;
+    --bs-list-group-action-hover-bg: #{$list-group-hover-bg};
+}
+
+.Menu li a:focus {
+    background: black;
+}
