@@ -12,7 +12,7 @@ const Menu = () => {
                         <Link to={"/"} className='list-group-item list-group-item-action'><img className='rounded-circle' id='logo' src='/images/3PicosLogo.jpg'/></Link>
                     </li>
                     <li className='list-group-item'>
-                        <Link to={"/trips"} className='list-group-item list-group-item-action'>Viagens</Link>
+                        <Link to={"/trips/tripsinitial"} className='list-group-item list-group-item-action'>Viagens</Link>
                     </li>
                     <li className='list-group-item'>
                         <Link to={"/gastronomy"} className='list-group-item list-group-item-action'>Gastronomia</Link>
