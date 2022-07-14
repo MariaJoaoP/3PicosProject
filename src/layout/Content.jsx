@@ -9,6 +9,8 @@ import AboutUs from '../views/AboutUs';
 import NotFound from '../views/NotFound';
 import TripsContent from '../views/TripsContent';
 import TripsInitial from '../views/TripsInitial';
+import MotorcyclesInitial from '../views/MotorcyclesInitial';
+import MotorcyclesContent from '../views/MotorcyclesContent';
 
 const Content = () => (
     <main className='Content h-100'>
@@ -20,7 +22,10 @@ const Content = () => (
             </Route>
             <Route path="/gastronomy" element={<Gastronomy />} ></Route>
             <Route path="/weather" element={<Weather />} ></Route>
-            <Route path="/motorcycles" element={<Motorcycles />} ></Route>
+            <Route path="/motorcycles" element={<Motorcycles />} >
+                <Route path="/motorcycles/motorcyclesinitial" element={<MotorcyclesInitial />}></Route>
+                <Route path="/motorcycles/:id" element={<MotorcyclesContent />} />
+            </Route>
             <Route path="/aboutus" element={<AboutUs />} ></Route>
             <Route path="*" element={<NotFound />} ></Route>
         </Routes>
