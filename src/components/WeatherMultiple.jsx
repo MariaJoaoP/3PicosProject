@@ -10,14 +10,14 @@ const WeatherMultiple = (props) => {
 
     useEffect(() => {
         setDataMulti([]);
-        const multiple = props.coordsMulti.map((coord) => {
+        props.coordsMulti.map((coord) => {
             fetch('https://api.weatherapi.com/v1/forecast.json?key=51a8b08074374ad38ec115508221405&q='+coord+'&days=3&aqi=no&alerts=no')
                 .then(res => res.json())
                 .then(
                     (data) => {
                         setIsLoaded(true);
-                        setData(data);
-                        setDataMulti(arr => [...arr, {data}]);            
+                        setData(data);            
+                        setDataMulti(dataMulti => [...dataMulti, {data}]);            
                     },
                     (error) => {
                         setIsLoaded(true);
