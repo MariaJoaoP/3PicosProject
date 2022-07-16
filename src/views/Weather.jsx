@@ -25,10 +25,6 @@ const Weather = () => {
         setMultipleLocations([]);
     }
 
-    useEffect(() => {
-        localStorage.setItem('cities', JSON.stringify(multipleLocations));
-    }, [multipleLocations]);
-
     const addFavs = (item) => {
         const cities = JSON.parse(localStorage.getItem('cities'));
         cities.push(item);
@@ -40,6 +36,10 @@ const Weather = () => {
         cities.splice(breakIndex, 1);
         setMultipleLocations(cities);
     }
+
+    useEffect(() => {
+        localStorage.setItem('cities', JSON.stringify(multipleLocations));
+    }, [multipleLocations]);
 
     return(
         <>
