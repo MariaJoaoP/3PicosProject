@@ -32,9 +32,9 @@ const Motorcycles = ( ) => {
                             <span className='navbar-toggler-icon'></span>
                         </button>
                         <div className='collapse navbar-collapse' id='navbarNav'>
-                        <ul className='navbar-nav' id='motorcyclesUl'>
-                            {motorcyclesList}
-                        </ul>
+                            <ul className='navbar-nav' id='motorcyclesUl'>
+                                {motorcyclesList}
+                            </ul>
                         </div>
                     </div>
                 </nav>

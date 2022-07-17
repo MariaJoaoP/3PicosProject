@@ -6,7 +6,7 @@ const MotorcyclesInitial = () => {
     return (
         <>
             <div>
-                <img className='img-fluid my-5' id='motorcyclesInitial' src='/images/motorcycles1.jpg'></img>
+                <img className='img-fluid my-5' id='motorcyclesInitial' alt='motorcyclesInitial' src='/images/motorcycles1.jpg'></img>
             </div>
         </>
     )

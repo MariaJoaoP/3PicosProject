@@ -7,10 +7,10 @@ import Weather from '../views/Weather';
 import Motorcycles from '../views/Motorcycles';
 import AboutUs from '../views/AboutUs';
 import NotFound from '../views/NotFound';
-import TripsContent from '../views/TripsContent';
-import TripsInitial from '../views/TripsInitial';
-import MotorcyclesInitial from '../views/MotorcyclesInitial';
-import MotorcyclesContent from '../views/MotorcyclesContent';
+import TripsContent from '../components/TripsContent';
+import TripsInitial from '../components/TripsInitial';
+import MotorcyclesInitial from '../components/MotorcyclesInitial';
+import MotorcyclesContent from '../components/MotorcyclesContent';
 import GastronomyMenu from '../components/GastronomyMenu';
 import GastronomyContent from '../components/GastronomyContent';
 
