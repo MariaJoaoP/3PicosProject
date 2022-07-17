@@ -15,7 +15,7 @@ const Menu = () => {
                         <Link to={"/trips/tripsinitial"} className='list-group-item list-group-item-action'>Viagens</Link>
                     </li>
                     <li className='list-group-item'>
-                        <Link to={"/gastronomy"} className='list-group-item list-group-item-action'>Gastronomia</Link>
+                        <Link to={"/gastronomy/gastronomyMenu"} className='list-group-item list-group-item-action'>Gastronomia</Link>
                     </li>
                     <li className='list-group-item'>
                         <Link to={"/weather"} className='list-group-item list-group-item-action'>Verifica o Tempo</Link>

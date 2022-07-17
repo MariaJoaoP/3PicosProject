@@ -1,12 +1,13 @@
 import React from 'react';
+import {Outlet} from 'react-router-dom';
 
 const Gastronomy = () => {
 
     return (
         <>
-            <div className='Gastronomy'>
-                <h1>Gastronomy</h1>
-            </div> 
+            <div className='Gastronomy container pt-4' >
+            <Outlet></Outlet>
+            </div>
         </>
     )
 }
