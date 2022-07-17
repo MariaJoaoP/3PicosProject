@@ -9,7 +9,7 @@ const Menu = () => {
             <nav> 
                 <ul className='list-group list-group-flush'>
                     <li className='list-group-item'>
-                        <Link to={"/"} className='list-group-item list-group-item-action'><img className='rounded-circle' id='logo' src='/images/3PicosLogo.jpg'/></Link>
+                        <Link to={"/"} className='list-group-item list-group-item-action'><img className='rounded-circle' id='logo' alt='logo' src='/images/3PicosLogo.jpg'/></Link>
                     </li>
                     <li className='list-group-item'>
                         <Link to={"/trips/tripsinitial"} className='list-group-item list-group-item-action'>Viagens</Link>

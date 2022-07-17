@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import WeatherCard from './WeatherCard';
+import './WeatherCurrent.css';
 
 const WeatherCurrent = () => {
 
@@ -31,9 +32,9 @@ const WeatherCurrent = () => {
     }, [location]);
 
     if (error) {
-        return <div><div>Error: {error.message}</div></div>;
+        return <div><div className='textWeatherCurrent'>Error: {error.message}</div></div>;
     } else if (!isLoaded) {
-        return <div><div>Loading...</div></div>;
+        return <div><div className='textWeatherCurrent'>Loading...</div></div>;
     } else {
         return(
             <>

@@ -17,7 +17,7 @@ const WeatherCard = (props) => {
 
     return (
         <>
-            <div className='weatherCard card my-3'>
+            <div className='weatherCard card mt-3 h-100'>
                 <div className='card-header conditionCurrent'>
                     <> {props.closeBtn &&
                         <button className='btn-close closeButton' type='button' onClick={e => props.aoClicar(props.closeIndex)} aria-label="Close"></button>

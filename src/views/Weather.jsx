@@ -78,7 +78,7 @@ const Weather = () => {
                 <div className='row'>
                         {(multipleLocations!='') ? <WeatherMultiple coordsMulti={multipleLocations} aoClicar={removeFav}></WeatherMultiple> : (<div></div>)}
                 </div>
-                <div className='row'>
+                <div className='row my-5'>
                     <div className='col-md-6 offset-md-3'>
                         {(multipleLocations.length>1) ? <button type='button' className='btn btn-dark' onClick={() => resetFav()}>Limpar Favoritos</button> : (<div></div>)}
                     </div>

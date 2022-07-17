@@ -24,9 +24,9 @@ const WeatherAdd = (props) => {
       }, [props.coords]);
 
     if (error) {
-        return <div><div>Error: {error.message}</div></div>;
+        return <div><div className='textWeatherAdd'>Error: {error.message}</div></div>;
     } else if (!isLoaded) {
-        return <div><div>Loading...</div></div>;
+        return <div><div className='textWeatherAdd'>Loading...</div></div>;
     } else {
         return(
             <>
@@ -34,11 +34,11 @@ const WeatherAdd = (props) => {
                 {(typeof data.location != 'undefined') ? (
                     <>
                         <WeatherCard weatherData={data}></WeatherCard>
-                        <button type="button" className='btn btn-dark' onClick={e => props.aoClicar(data.location.name+', '+data.location.country)}>Adiciona aos favoritos</button>
+                        <button type="button" className='btn btn-dark mt-3' onClick={e => props.aoClicar(data.location.name+', '+data.location.country)}>Adiciona aos favoritos</button>
                         <p className='textWeatherAdd'>Adiciona aos teus favoritos para veres todas as localizações mesmo depois de fechares a página.</p>
                     </>
                 ): (
-                <div>Error: {data.error.message}</div>
+                <div className='textWeatherAdd'>Error: {data.error.message}</div>
                 )}
             </div>
             </> 
